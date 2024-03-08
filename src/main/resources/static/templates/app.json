@@ -1,0 +1,12 @@
+{
+  "name": "::自有",
+  "short": "::Demo",
+  "description": "::测试",
+  "version": "0.10.3",
+  "adminRoot": "admin",
+  "setup": "scripts.setup.Data",
+  "menu": { "process": "flows.app.menu" },
+  "optional": {
+    "remoteCache": true
+  }
+}

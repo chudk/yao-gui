@@ -1,0 +1,15 @@
+server:
+  port: 5098
+  servlet:
+    context-path: /yao-gui
+
+spring:
+  web:
+    resources:
+      static-locations: classpath:/resources,classpath:/static
+  mvc:
+    static-path-pattern: /**
+
+config:
+  store-path: /tmp/yao
+

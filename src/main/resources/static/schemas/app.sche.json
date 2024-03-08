@@ -1,0 +1,57 @@
+{
+  "type": "object",
+  "title": "app配置",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "名称",
+      "default": "Demo App"
+    },
+    "short": {
+      "type": "string",
+      "title": "简称",
+      "default": "Demo"
+    },
+    "description": {
+      "type": "string",
+      "title": "描述",
+      "default": "Demo"
+    },
+    "version": {
+      "type": "string",
+      "title": "版本",
+      "default": "0.10.3"
+    },
+    "adminRoot": {
+      "type": "string",
+      "title": "admin根路径",
+      "default": "admin"
+    },
+    "setup": {
+      "type": "string",
+      "title": "初始配置",
+      "default": "scripts.setup.Data"
+    },
+    "menu": {
+      "type": "object",
+      "title": "菜单配置",
+      "properties": {
+        "process": {
+          "type": "string",
+          "default": "flows.app.menu"
+        }
+      }
+    },
+    "optional": {
+      "type": "object",
+      "title": "可选项",
+      "properties": {
+        "remoteCache": {
+          "type": "boolean",
+          "title": "使用远程缓存",
+          "default": "true"
+        }
+      }
+    }
+  }
+}

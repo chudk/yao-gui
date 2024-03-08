@@ -1,0 +1,22 @@
+YAO_DB_DRIVER="sqlite3"
+YAO_DB_PRIMARY="/data/app/db/yao.db"
+YAO_ENV="development"
+YAO_HOST="0.0.0.0"
+YAO_LANG="zh-cn"
+YAO_LOG="/data/app/logs/application.log"
+YAO_LOG_MODE="TEXT"
+YAO_PORT="5099"
+YAO_SESSION_FILE="/data/app/db/.session"
+YAO_SESSION_STORE="file"
+YAO_SESSION_STORE="redis"
+#可选，默认本地
+YAO_SESSION_HOST="127.0.0.1"
+#可选，默认6379
+YAO_SESSION_PORT="6379"
+#可选
+YAO_SESSION_PASSWORD=
+#可选
+YAO_SESSION_USERNAME=
+# 可选，默认是1
+YAO_SESSION_DB=
+YAO_STUDIO_PORT="5077"

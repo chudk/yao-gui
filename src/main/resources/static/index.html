@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>测试用</title>
+    <meta charset="utf-8">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jsoneditor.min.js"></script>
+</head>
+
+<body>
+<div>
+    <h3>编辑器</h3>
+</div>
+<div id="json-editor"></div>
+<script>
+    $.getJSON('./schemas/apis.sche.json',function(res){
+        var option = {
+            theme: "html",
+            disable_edit_json: true,
+            disable_collapse: true,
+            schema: res
+        };
+        var $ele = document.getElementById("json-editor");
+        var editor = new JSONEditor($ele, option);
+        window.jsoneditor = editor;
+    })
+
+</script>
+</body>
+
+</html>

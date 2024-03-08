@@ -1,0 +1,82 @@
+{
+  "type": "object",
+  "title": "接口配置",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "接口名称",
+      "default": "测试接口"
+    },
+    "version": {
+      "type": "string",
+      "title": "接口版本"
+    },
+    "description": {
+      "type": "string",
+      "title": "接口说明"
+    },
+    "guard": {
+      "type": "string",
+      "title": "过滤器",
+      "default": "-"
+    },
+    "group": {
+      "type": "string"
+    },
+    "paths": {
+      "type": "array",
+      "title": "接口路径配置",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "title": "访问地址"
+          },
+          "method": {
+            "type": "string",
+            "title": "请求方法",
+            "enums": [
+              "GET",
+              "POST"
+            ],
+            "default": "GET"
+          },
+          "guard": {
+            "type": "string",
+            "title": "单接口的过滤器",
+            "default": "-"
+          },
+          "process": {
+            "type": "string",
+            "title": "执行器"
+          },
+          "in": {
+            "type": "array",
+            "title": "传入参数",
+            "items": {
+              "type": "string",
+              "title": "参数名"
+            }
+          },
+          "out": {
+            "type": "object",
+            "title": "响应结果",
+            "properties": {
+              "status": {
+                "type": "integer",
+                "title": "状态码",
+                "default": 200
+              },
+              "type": {
+                "type": "string",
+                "title": "body类型",
+                "default": "application/json"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

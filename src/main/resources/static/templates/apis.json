@@ -1,0 +1,17 @@
+{
+  "name": "接口模版",
+  "version": "1.0.0",
+  "description": "自定义API接口",
+  "guard": "-",
+  "group":"v1",
+  "paths": [
+    {
+      "path": "test",
+      "method": "GET",
+      "guard":"-",
+      "process": "scripts.api.Test",
+      "in": [""],
+      "out": { "status": 200, "type": "application/json" }
+    }
+  ]
+}
